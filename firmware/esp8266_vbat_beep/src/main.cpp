@@ -1,5 +1,12 @@
+#include <Arduino.h>
+
 const int PIN_BEEP = 2;
 const float CELLS = 4.0;
+
+// PACK_FULL_ADC / PACK_FULL_V: bench calibration constants, not yet measured on real
+// hardware (design-stage — see firmware README for the calibration walkthrough).
+// Re-derive both after flashing: charge the pack full, read the printed `adc=` value,
+// and set PACK_FULL_V to the multimeter reading at that same moment.
 const float PACK_FULL_ADC = 860.0;
 const float PACK_FULL_V = 16.80;
 const float CELL_ALARM = 3.50;

@@ -1,0 +1,18 @@
+name: Doc or BOM change
+description: Propose a part swap, documentation correction, or new calculator feature
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: What's changing
+      description: e.g. swap a part in 6_BOM/kite5.json, correct a wiring note, add a calculator option.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What's the motivation — a better part, a correction, a missing feature?
+    validations:
+      required: true

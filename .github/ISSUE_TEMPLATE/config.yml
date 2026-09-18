@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General questions
+    url: https://github.com/Geneticscrol/openbom-drone/blob/main/CONTRIBUTING.md
+    about: Check CONTRIBUTING.md before opening an issue for general questions.

@@ -5,19 +5,29 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "openbom-drone"
 version = "0.1.0"
-description = "5-inch FPV bill of materials: example INR, grams, shop links"
+description = "Design-stage engineering package for Kite-5, a 5-inch 4S FPV quad: mass budget, hover power, motor-mixer reference, and ESP8266 pack-voltage firmware."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+authors = [{ name = "OpenBOM-Drone contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
 
 [project.scripts]
-openbom = "openbom.web:serve"
+kite5 = "kite5.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["openbom*"]
-
-[tool.setuptools.package-data]
-openbom = ["static/*"]
+include = ["kite5*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

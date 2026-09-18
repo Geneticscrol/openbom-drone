@@ -1,0 +1,37 @@
+name: Bug report
+description: Something in the docs, calculators, or firmware is wrong
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area affected
+      options:
+        - Docs (numbered folders / README)
+        - kite5 calculators (mass / hover / mixer)
+        - Firmware (ESP8266)
+        - BOM data (6_BOM/kite5.json)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong
+      description: What did you expect, and what did you actually get or observe?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce (or what's inaccurate)
+      description: Command run, page viewed, or calculation checked.
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment (if code-related)
+      description: OS and Python version, e.g. "Windows 11, Python 3.12"
+    validations:
+      required: false
