@@ -1,0 +1,15 @@
+{
+  "name": "Kite-5",
+  "target_g": 650,
+  "items": [
+    {"id": "frame", "name": "5-inch freestyle frame", "qty": 1, "grams": 120, "inr_example": 2800},
+    {"id": "motor", "name": "2207 1950KV", "qty": 4, "grams": 32, "inr_example": 1400},
+    {"id": "prop", "name": "5in 3-blade (one prop)", "qty": 4, "grams": 4, "inr_example": 80},
+    {"id": "aio", "name": "F405 50A AIO", "qty": 1, "grams": 18, "inr_example": 4500},
+    {"id": "elrs", "name": "ELRS 2.4 RX", "qty": 1, "grams": 1, "inr_example": 900},
+    {"id": "vtx", "name": "5.8 analog VTX", "qty": 1, "grams": 8, "inr_example": 1800},
+    {"id": "cam", "name": "Nano analog cam", "qty": 1, "grams": 6, "inr_example": 1500},
+    {"id": "hw", "name": "XT60, pads, screws", "qty": 1, "grams": 25, "inr_example": 400},
+    {"id": "pack", "name": "4S 1500 mAh", "qty": 1, "grams": 175, "inr_example": 2200}
+  ]
+}
